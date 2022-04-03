@@ -22,12 +22,12 @@ def bfs_haspath(matrix):
     sn=[(snode)]
     res=[]
     while(sn):
-        print(sn,res)
+        #print(sn,res)
         x=sn.pop(0)
         if x not in res:
             sn.extend(matrix[x])
             res.append(x)
-    print(dnode in res)
+    print(int(dnode in res))
         
 x=graph2d()
 bfs_haspath(x)
